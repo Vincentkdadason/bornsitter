@@ -10,6 +10,55 @@ body {
 a {
   text-decoration: none; }
 
+input, select {
+  font-size: 16px;
+  height: 62px;
+  padding: 0 30px;
+  color: black;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #e5e5e5; }
+  input::placeholder, select::placeholder {
+    color: gray; }
+
+textarea {
+  font-size: 16px;
+  height: 62px;
+  padding: 0 30px;
+  color: black;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #e5e5e5;
+  height: auto;
+  padding: 30px; }
+  textarea::placeholder {
+    color: gray; }
+
+.bs-fgroup {
+  width: 100%;
+  margin: 1rem 0; }
+
+.bs-btn {
+  border: none;
+  border-radius: 4px;
+  box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 0.165em;
+  max-width: 100%;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  transition: 0.2s box-shadow ease-in-out, 0.2s background-color ease-in-out, 0.2s border-color ease-in-out;
+  white-space: nowrap;
+  padding: 1.2em 4em; }
+
 .bs-nav {
   position: fixed;
   top: 0;
@@ -29,7 +78,8 @@ a {
   .bs-nav .top-menu a {
     display: inline-block;
     margin: 0 1.8rem;
-    color: #02C873; }
+    color: #02C873;
+    font-weight: 600; }
 
 .bs-header {
   width: 100%;
@@ -167,7 +217,7 @@ a {
 .bs-strip {
   width: 100%;
   height: 200px;
-  background: #2DD1AF;
+  background: #02C873;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -187,7 +237,7 @@ a {
     text-align: center;
     margin-bottom: 4rem; }
     .b-sitters h4 strong {
-      color: #2DD1AF;
+      color: #02C873;
       font-size: 1.2rem; }
   .b-sitters > .b-sitters-list {
     width: 100%;
@@ -234,7 +284,7 @@ a {
             display: inline-block;
             margin-right: 2rem; }
             .b-sitters > .b-sitters-list .b-sitter .sitter-info .sitter-actions a i {
-              color: #2DD1AF; }
+              color: #02C873; }
             .b-sitters > .b-sitters-list .b-sitter .sitter-info .sitter-actions a span {
               color: #636363;
               transition: color 300ms; }
@@ -245,7 +295,7 @@ a {
     margin-top: 5rem; }
     .b-sitters p a {
       display: inline-block;
-      background: #2DD1AF;
+      background: #02C873;
       color: whitesmoke;
       padding: 1rem 3rem;
       border-radius: 2rem; }
@@ -283,7 +333,7 @@ a {
         justify-content: center;
         align-items: center;
         margin-right: 1.5rem;
-        background: #2DD1AF; }
+        background: #02C873; }
         .start-meet .start-desc .sitter-features .sitter-feature .sitter-f-icon i {
           color: whitesmoke; }
       .start-meet .start-desc .sitter-features .sitter-feature .sitter-f-desc {
@@ -293,15 +343,15 @@ a {
       margin-top: 2rem; }
       .start-meet .start-desc > p a {
         display: inline-block;
-        border: 1px solid #2DD1AF;
-        color: #2DD1AF;
+        border: 1px solid #02C873;
+        color: #02C873;
         padding: 0.8rem 3rem;
         border-radius: 2rem;
         transition: all 300ms; }
         .start-meet .start-desc > p a i {
           margin-left: 0.5rem; }
         .start-meet .start-desc > p a:hover {
-          background: #2DD1AF;
+          background: #02C873;
           color: whitesmoke; }
 
 .works {
@@ -356,7 +406,7 @@ a {
         .works > section p a i {
           margin-left: 0.5rem; }
         .works > section p a:hover {
-          background: #2DD1AF;
+          background: #02C873;
           color: whitesmoke; }
 
 .confidence {
@@ -388,7 +438,7 @@ a {
       .confidence > section .conf i {
         font-size: 3rem;
         margin-bottom: 1rem;
-        color: #2DD1AF; }
+        color: #02C873; }
       .confidence > section .conf:nth-child(2) i {
         color: #ff9800; }
       .confidence > section .conf:last-child i {
@@ -399,7 +449,7 @@ a {
 
 .bs-footer {
   width: 100%;
-  background: #2DD1AF;
+  background: #02C873;
   padding: 5rem 10rem 2rem 10rem;
   margin-top: 2rem; }
   .bs-footer .footer-top {
@@ -427,7 +477,7 @@ a {
         background: white;
         margin-left: 2rem; }
         .bs-footer .footer-top .bs-social a i {
-          color: #2DD1AF;
+          color: #02C873;
           font-size: 1.4rem; }
   .bs-footer .footer-bottom {
     width: 100%;
@@ -438,5 +488,122 @@ a {
     .bs-footer .footer-bottom a {
       font-size: 1.1rem;
       color: whitesmoke; }
+
+.bs-auth {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end; }
+  .bs-auth .bs-nav {
+    background: transparent; }
+  .bs-auth .auth-form-wrapper {
+    width: 35%;
+    height: 100%;
+    position: relative; }
+    .bs-auth .auth-form-wrapper:before {
+      position: absolute;
+      content: '';
+      top: -25%;
+      left: 0;
+      z-index: -1;
+      width: 120%;
+      height: 150%;
+      border-radius: 50%;
+      background: white; }
+    .bs-auth .auth-form-wrapper form {
+      width: 100%;
+      height: 100%;
+      padding: 2rem 2rem 2rem 10rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start; }
+      .bs-auth .auth-form-wrapper form h2 {
+        font-size: 2rem; }
+        .bs-auth .auth-form-wrapper form h2 strong {
+          color: #02C873; }
+      .bs-auth .auth-form-wrapper form p {
+        margin: 1.4rem 0; }
+      .bs-auth .auth-form-wrapper form .forgot-pwd {
+        text-align: right; }
+        .bs-auth .auth-form-wrapper form .forgot-pwd a {
+          font-size: 0.8rem; }
+      .bs-auth .auth-form-wrapper form .auth-action {
+        width: 100%;
+        margin-top: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .bs-auth .auth-form-wrapper form .auth-action .bs-btn {
+          background: #02C873;
+          color: white; }
+        .bs-auth .auth-form-wrapper form .auth-action a {
+          color: #02C873;
+          font-weight: 600; }
+  .bs-auth .auth-page-image {
+    width: 65%;
+    height: 100%;
+    position: relative;
+    z-index: -2;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url("../img/auth-cover.jpeg") no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .bs-auth .auth-page-image .bs-connections {
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      position: relative;
+      border: 1px solid white;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .bs-auth .auth-page-image .bs-connections .con-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 200px;
+        border-radius: inherit;
+        overflow: hidden; }
+        .bs-auth .auth-page-image .bs-connections .con-img img {
+          width: 100%; }
+      .bs-auth .auth-page-image .bs-connections .con-nanny {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        background: white; }
+        .bs-auth .auth-page-image .bs-connections .con-nanny img {
+          width: 100%;
+          height: 100%;
+          border-radius: inherit;
+          opacity: 0.7; }
+        .bs-auth .auth-page-image .bs-connections .con-nanny:nth-child(2) {
+          left: auto;
+          right: 0; }
+        .bs-auth .auth-page-image .bs-connections .con-nanny:nth-child(3) {
+          left: auto;
+          right: 0;
+          top: auto;
+          bottom: 0; }
+        .bs-auth .auth-page-image .bs-connections .con-nanny:nth-child(4) {
+          top: auto;
+          bottom: 0; }
+      .bs-auth .auth-page-image .bs-connections .con-desc {
+        position: absolute;
+        bottom: -150px;
+        left: 0; }
+        .bs-auth .auth-page-image .bs-connections .con-desc h3 {
+          color: white;
+          text-align: center;
+          font-size: 1.5rem;
+          line-height: 1.3; }
 
 /*# sourceMappingURL=app.css.map */

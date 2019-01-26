@@ -4,5 +4,6 @@ $(document).ready(function(){
         margin:0,
         nav:false,
         items: 1,
+        autoplay: true
     });
 });

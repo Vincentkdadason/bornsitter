@@ -6,4 +6,9 @@ $(document).ready(function(){
         items: 1,
         autoplay: true
     });
+    // dataTables activation
+    var dTable = $('.dt-table').DataTable({responsive: true});
+    $('.eshop-table-search').on('keyup', function (e) {
+        dTable.search($(e.target).val()).draw();
+    });
 });

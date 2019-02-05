@@ -835,6 +835,20 @@ textarea {
   padding: 0 !important; }
   .dataTables_wrapper i.fa-check {
     color: #02C873; }
+  .dataTables_wrapper .action a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 3px; }
+    .dataTables_wrapper .action a.danger {
+      background: red;
+      color: white; }
+    .dataTables_wrapper .action a.success {
+      background: #02C873;
+      color: white; }
+    .dataTables_wrapper .action a.info {
+      background: royalblue;
+      color: white; }
 
 .dataTables_wrapper .row:first-child {
   display: none; }
@@ -911,5 +925,36 @@ textarea {
   border: 1px solid lightgrey;
   border-radius: 2px;
   background: white; }
+
+.dash-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999999;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .dash-modal .dialog {
+    width: 50%;
+    min-height: 30%;
+    background: white;
+    padding: 5rem 1.5rem 1.5rem 1.5rem;
+    border-radius: 2px;
+    position: relative; }
+    .dash-modal .dialog .dialogue-header {
+      width: 100%;
+      height: 4rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      padding-left: 1.5rem;
+      border-bottom: 1px solid #c9c9c9;
+      font-weight: 600;
+      font-size: 1.3rem; }
 
 /*# sourceMappingURL=app.css.map */

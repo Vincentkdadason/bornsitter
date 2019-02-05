@@ -1048,6 +1048,26 @@ textarea{
   i.fa-check{
     color: $green;
   }
+  .action{
+    a{
+      display: inline-block;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 3px;
+      &.danger{
+        background: red;
+        color: white;
+      }
+      &.success{
+        background: $green;
+        color: white;
+      }
+      &.info{
+        background: royalblue;
+        color: white;
+      }
+    }
+  }
   padding: 0!important; }
 .dataTables_wrapper .row:first-child {
   display: none; }
@@ -1110,4 +1130,38 @@ textarea{
   border: 1px solid lightgrey;
   border-radius: 2px;
   background: white;
+}
+
+.dash-modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999999;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .dialog{
+    width: 50%;
+    min-height: 30%;
+    background: white;
+    padding: 5rem 1.5rem 1.5rem 1.5rem;
+    border-radius: 2px;
+    position: relative;
+    .dialogue-header{
+      width: 100%;
+      height: 4rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      padding-left: 1.5rem;
+      border-bottom: 1px solid #c9c9c9;
+      font-weight: 600;
+      font-size: 1.3rem;
+    }
+  }
 }

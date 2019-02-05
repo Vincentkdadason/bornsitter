@@ -11,4 +11,8 @@ $(document).ready(function(){
     $('.eshop-table-search').on('keyup', function (e) {
         dTable.search($(e.target).val()).draw();
     });
+
+    $('.action .info').on('click', function (e) {
+
+    });
 });

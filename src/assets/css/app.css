@@ -957,4 +957,93 @@ textarea {
       font-weight: 600;
       font-size: 1.3rem; }
 
+.jobs-board {
+  width: 100%;
+  background: rgba(245, 245, 245, 0.58);
+  padding: 2rem 14rem;
+  margin-top: 102px; }
+  .jobs-board .j-board {
+    width: 100%;
+    margin-top: 3rem; }
+    .jobs-board .j-board .bs-job {
+      width: 100%;
+      min-height: 100px;
+      border: 1px solid #dfe1e5;
+      border-radius: 3px;
+      background: white;
+      padding: 2rem;
+      position: relative;
+      margin-bottom: 2rem;
+      transition: box-shadow 300ms; }
+      .jobs-board .j-board .bs-job:hover {
+        box-shadow: 0 1px 15px 1px #e6e6e6; }
+      .jobs-board .j-board .bs-job .bs-job-time {
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+        font-style: normal;
+        font-size: 0.7rem; }
+      .jobs-board .j-board .bs-job .bs-job-mini {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 1.5rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #dfe1e5; }
+        .jobs-board .j-board .bs-job .bs-job-mini .bs-job-owner {
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          line-height: 1; }
+          .jobs-board .j-board .bs-job .bs-job-mini .bs-job-owner img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 0.6rem; }
+        .jobs-board .j-board .bs-job .bs-job-mini span em {
+          font-style: normal; }
+      .jobs-board .j-board .bs-job ul li {
+        font-size: 0.8rem;
+        list-style: inside; }
+      .jobs-board .j-board .bs-job h5 {
+        margin: 1.5rem 0 1rem 0; }
+      .jobs-board .j-board .bs-job h3 {
+        margin: 1.5rem 0 1rem 0; }
+      .jobs-board .j-board .bs-job p {
+        line-height: 1.4;
+        font-size: 1.1rem; }
+      .jobs-board .j-board .bs-job .bs-job-bottom {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 16px; }
+        .jobs-board .j-board .bs-job .bs-job-bottom a {
+          text-decoration: none;
+          display: inline-block;
+          padding: 0.5rem 1.5rem;
+          border: 1px solid #02C873;
+          border-radius: 3px;
+          color: #02C873; }
+
+.bs-pagination {
+  display: flex;
+  align-items: center; }
+  .bs-pagination a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #02C873;
+    color: #02C873;
+    border-left: none; }
+    .bs-pagination a:first-child {
+      border-left: 1px solid #02C873; }
+    .bs-pagination a.active {
+      background: #02C873;
+      color: white; }
+
 /*# sourceMappingURL=app.css.map */

@@ -1,0 +1,107 @@
+@import "utils";
+
+// ------------------------------HIGH RES--
+@include mq(1900) {
+  html{
+    font-size: 16px;
+  }
+}
+
+// ------------------------------1700--
+@include mq(1700, false, max) {
+  input, select{
+    height: 50px;
+  }
+  .bs-nav{
+    height: 90px;
+  }
+  .bs-auth{
+    .auth-form-wrapper{
+    }
+    .auth-page-image{
+      .bs-connections{
+        width: 400px;
+        height: 400px;
+        .con-img{
+          width: 170px;
+          height: 170px;
+        }
+        .con-nanny{
+          width: 100px;
+          height: 100px;
+        }
+        .con-desc{
+          bottom: -130px;
+        }
+      }
+    }
+  }
+}
+
+// ------------------------------1500--
+@include mq(1500, false, max) {
+  .bs-nav{
+    height: 75px;
+  }
+  .bs-auth{
+    .auth-form-wrapper{
+    }
+    .auth-page-image{
+      .bs-connections{
+        width: 320px;
+        height: 320px;
+        .con-img{
+          width: 140px;
+          height: 140px;
+        }
+        .con-nanny{
+          width: 90px;
+          height: 90px;
+        }
+        .con-desc{
+          bottom: -110px;
+        }
+      }
+    }
+  }
+}
+
+// ------------------------------1300--
+@include mq(1300, false, max) {
+  .bs-auth{
+    .auth-form-wrapper{
+    }
+    .auth-page-image{
+      .bs-connections{
+        width: 270px;
+        height: 270px;
+        .con-img{
+          width: 120px;
+          height: 120px;
+        }
+        .con-nanny{
+          width: 80px;
+          height: 80px;
+        }
+        .con-desc{
+          bottom: -100px;
+        }
+      }
+    }
+  }
+}
+
+// ------------------------------1100--
+@include mq(1100) {
+
+}
+
+// ------------------------------900--
+@include mq(900) {
+
+}
+
+// ------------------------------700--
+@include mq(700) {
+
+}

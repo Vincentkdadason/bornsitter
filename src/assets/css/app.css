@@ -1114,12 +1114,12 @@ textarea {
       width: 45%; }
     .bs-auth .auth-page-image {
       width: 55%; } }
-@media (max-width: 84.375em) and (max-width: 52.5em) {
-  .bs-auth .auth-form-wrapper {
-    width: 100%; }
-  .bs-auth .auth-page-image {
-    width: 0;
-    overflow: hidden; } }
+  @media (max-width: 52.5em) {
+    .bs-auth .auth-form-wrapper {
+      width: 100%; }
+    .bs-auth .auth-page-image {
+      width: 0;
+      overflow: hidden; } }
 
 @media (min-width: 118.75em) {
   html {

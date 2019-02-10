@@ -176,7 +176,6 @@
       }
     }
   }
-
   @include mq(1350, false, max) {
     .auth-form-wrapper {
       width: 45%;
@@ -184,14 +183,14 @@
     .auth-page-image {
       width: 55%;
     }
-    @include mq(840, false, max) {
-      .auth-form-wrapper {
-        width: 100%;
-      }
-      .auth-page-image {
-        width: 0;
-        overflow: hidden;
-      }
+  }
+  @include mq(840, false, max) {
+    .auth-form-wrapper {
+      width: 100%;
+    }
+    .auth-page-image {
+      width: 0;
+      overflow: hidden;
     }
   }
 }
